@@ -1,0 +1,150 @@
+/* General Styles */
+.stopwatch {
+    font-family: 'Roboto', sans-serif;
+    background: url(https://assets.ccbp.in/frontend/react-js/stopwatch-sm-bg.png) no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 2em;
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.timer-container {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px;
+    gap: 1em;
+}
+
+.timer-display:hover {
+    transform: scale(1.05);
+}
+
+.stopwatch-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.timer-display {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+
+.time {
+    color: #333333;
+    font-size: 48px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.control-button {
+    border: none;
+    border-radius: 25px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.control-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.start-button {
+    background-color: #1db05f;
+}
+
+.stop-button {
+    background-color: #ef0d36;
+}
+
+.reset-button {
+    background-color: #eaa800;
+}
+
+/* Media Queries */
+@media (max-width: 576px) {
+    .stopwatch {
+        padding: 15px;
+        gap: 1.5em;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .stopwatch-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .timer-display {
+        padding: 15px 25px;
+    }
+
+    .time {
+        font-size: 40px;
+    }
+
+    .control-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .stopwatch {
+        background-image: url(https://assets.ccbp.in/frontend/react-js/stopwatch-lg-bg.png);
+        padding: 30px;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    .stopwatch-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .timer-display {
+        padding: 30px 40px;
+    }
+
+    .time {
+        font-size: 60px;
+    }
+
+    .control-button {
+        font-size: 20px;
+        padding: 14px 28px;
+    }
+}
